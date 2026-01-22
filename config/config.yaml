@@ -1,0 +1,23 @@
+model:
+  model_name: "distilbert-base-uncased"
+  task: "sentiment-analysis"
+  device: null  # null for auto-detection
+  max_length: 512
+  batch_size: 16
+
+visualization:
+  figure_size: [12, 8]
+  dpi: 300
+  colormap: "Blues"
+  save_plots: true
+  show_plots: true
+
+lime:
+  num_features: 10
+  num_samples: 1000
+  random_state: 42
+
+log_level: "INFO"
+data_dir: "data"
+models_dir: "models"
+output_dir: "outputs"
